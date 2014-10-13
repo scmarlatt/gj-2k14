@@ -46,11 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameBackgrounds\BadGuyScript.cs" />
+     <Compile Include="Assets\GameBackgrounds\Day_Night.cs" />
+     <Compile Include="Assets\Scripts\CrosshairController.cs" />
+     <Compile Include="Assets\Scripts\TowerController.cs" />
      <Compile Include="Assets\SunManScripts\Stats.cs" />
      <Compile Include="Assets\SunManScripts\lightbeamScript.cs" />
      <Compile Include="Assets\SunManScripts\sunmanController.cs" />
      <Compile Include="Assets\SunManScripts\towerController.cs" />
+     <Compile Include="Assets\UI\OnClick.cs" />
      <None Include="Assets\GameBackgrounds\Resources\Sprites\SpriteSources.txt" />
+     <None Include="Assets\Resources\Sprites\SpriteSources.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
