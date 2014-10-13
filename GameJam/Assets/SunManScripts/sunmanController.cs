@@ -33,16 +33,15 @@ public class sunmanController : MonoBehaviour {
 		if (Input.GetKeyDown ("z")) {
 			rigidbody.velocity = new Vector3 (rigidbody.velocity.x, maxY, 0);
 		}
-		if (rigidbody.velocity.y > 0) {
+		if (rigidbody.velocity.y > 0.05) {
 			rfs = 1;		
 		}
-		else if(rigidbody.velocity.y == 0){
-			rfs = 0;
-		}
-		else if(rigidbody.velocity.y < 0){
+		else if(rigidbody.velocity.y < -0.05){
 			rfs = -1;
 		}
-
+		else{
+			rfs = 0;
+		}
 
 		anim.SetInteger ("Aerials", rfs);
 

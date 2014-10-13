@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: 5acdae016df747345ad77e014cb863f6
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: LightningFlyer
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
