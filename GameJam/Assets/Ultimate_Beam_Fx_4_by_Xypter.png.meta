@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: b9a6f318780954c5db177a6439b50a95
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ultimate_Beam_Fx_4_by_Xypter_0
+    21300002: Ultimate_Beam_Fx_4_by_Xypter_1
+    21300004: Ultimate_Beam_Fx_4_by_Xypter_2
+    21300006: Ultimate_Beam_Fx_4_by_Xypter_3
+    21300008: Ultimate_Beam_Fx_4_by_Xypter_4
+    21300010: Ultimate_Beam_Fx_4_by_Xypter_5
+    21300012: Ultimate_Beam_Fx_4_by_Xypter_6
+    21300014: Ultimate_Beam_Fx_4_by_Xypter_7
+    21300016: Ultimate_Beam_Fx_4_by_Xypter_8
+    21300018: Ultimate_Beam_Fx_4_by_Xypter_9
+    21300020: Ultimate_Beam_Fx_4_by_Xypter_10
+    21300022: Ultimate_Beam_Fx_4_by_Xypter_11
+    21300024: Ultimate_Beam_Fx_4_by_Xypter_12
+    21300026: Ultimate_Beam_Fx_4_by_Xypter_13
+    21300028: Ultimate_Beam_Fx_4_by_Xypter_14
+    21300030: Ultimate_Beam_Fx_4_by_Xypter_15
+    21300032: Ultimate_Beam_Fx_4_by_Xypter_16
+    21300034: Ultimate_Beam_Fx_4_by_Xypter_17
+    21300036: Ultimate_Beam_Fx_4_by_Xypter_18
+    21300038: Ultimate_Beam_Fx_4_by_Xypter_19
+    21300040: Ultimate_Beam_Fx_4_by_Xypter_20
+    21300042: Ultimate_Beam_Fx_4_by_Xypter_21
+    21300044: Ultimate_Beam_Fx_4_by_Xypter_22
+    21300046: Ultimate_Beam_Fx_4_by_Xypter_23
+    21300048: Ultimate_Beam_Fx_4_by_Xypter_24
+    21300050: Ultimate_Beam_Fx_4_by_Xypter_25
+    21300052: Ultimate_Beam_Fx_4_by_Xypter_26
+    21300054: Ultimate_Beam_Fx_4_by_Xypter_27
+    21300056: Ultimate_Beam_Fx_4_by_Xypter_28
+    21300058: Ultimate_Beam_Fx_4_by_Xypter_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ultimate_Beam_Fx_4_by_Xypter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1022
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1022
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 950
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 950
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 878
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 878
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 806
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 734
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 662
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 662
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 590
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 565
+        width: 366
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 518
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 518
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 446
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 446
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 374
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 302
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 302
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 230
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 158
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 86
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ultimate_Beam_Fx_4_by_Xypter_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 14
+        width: 256
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

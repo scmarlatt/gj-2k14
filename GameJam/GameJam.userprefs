@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/playerStats.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SunManScripts/lightbeamScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/playerStats.cs" Line="10" Column="21" />
-      <File FileName="Assets/Scripts/sunmanController.cs" Line="27" Column="11" />
+      <File FileName="Assets/SunManScripts/sunmanController.cs" Line="65" Column="88" />
+      <File FileName="../../494/megaman2bubbleman_v2.1/Assets/Scripts/MegaManController.cs" Line="1" Column="1" />
+      <File FileName="Assets/SunManScripts/lightbeamScript.cs" Line="14" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

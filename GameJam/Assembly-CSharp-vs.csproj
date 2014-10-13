@@ -46,7 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SunManScripts\playerStats.cs" />
+     <Compile Include="Assets\SunManScripts\Stats.cs" />
+     <Compile Include="Assets\SunManScripts\lightbeamScript.cs" />
      <Compile Include="Assets\SunManScripts\sunmanController.cs" />
      <Compile Include="Assets\SunManScripts\towerController.cs" />
      <None Include="Assets\GameBackgrounds\Resources\Sprites\SpriteSources.txt" />
