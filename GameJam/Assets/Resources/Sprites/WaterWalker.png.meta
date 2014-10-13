@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 6c5b07ae1a383764385ab4fde0219726
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WaterWalker_0
+    21300002: WaterWalker_1
+    21300004: WaterWalker_2
+    21300006: WaterWalker_3
+    21300008: WaterWalker_4
+    21300010: WaterWalkerReady
+    21300012: WaterWalkerAttack
+    21300014: WaterWalkerHurt
+    21300016: WaterWalkerGrowl
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WaterWalker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalker_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 39
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalker_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 29
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalker_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 24
+        width: 29
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalker_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalkerReady
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 10
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalkerAttack
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 9
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalkerHurt
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 9
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaterWalkerGrowl
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 9
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
