@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameBackgrounds/Day_Night.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameBackgrounds/BadGuyScript.cs">
     <Files>
       <File FileName="Assets/GameBackgrounds/Day_Night.cs" Line="34" Column="1" />
       <File FileName="../../GameJam/Assets/GameBackgrounds/Day_Night.cs" Line="34" Column="1" />
+      <File FileName="Assets/GameBackgrounds/BadGuyScript.cs" Line="5" Column="2" />
+      <File FileName="../../EECS494-F14-A1-SPECTORMATT_MARLATTSCOTT/Assets/Scripts/Snail.cs" Line="10" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

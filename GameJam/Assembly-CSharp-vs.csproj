@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\GameBackgrounds\BadGuyScript.cs" />
      <Compile Include="Assets\GameBackgrounds\Day_Night.cs" />
+     <Compile Include="Assets\GameBackgrounds\downladder.cs" />
      <Compile Include="Assets\Scripts\CrosshairController.cs" />
      <Compile Include="Assets\Scripts\TowerController.cs" />
      <Compile Include="Assets\SunManScripts\playerStats.cs" />
