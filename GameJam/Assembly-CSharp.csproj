@@ -46,9 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameBackgrounds\BadGuyScript.cs" />
-     <Compile Include="Assets\GameBackgrounds\Day_Night.cs" />
-     <Compile Include="Assets\GameBackgrounds\downladder.cs" />
+     <Compile Include="Assets\GameBackgrounds\Scripts\Day_Night.cs" />
+     <Compile Include="Assets\GameBackgrounds\Scripts\dayrobotScript.cs" />
+     <Compile Include="Assets\GameBackgrounds\Scripts\downladder.cs" />
      <Compile Include="Assets\Scripts\CrosshairController.cs" />
      <Compile Include="Assets\Scripts\TowerController.cs" />
      <Compile Include="Assets\SunManScripts\Stats.cs" />
@@ -56,7 +56,6 @@
      <Compile Include="Assets\SunManScripts\sunmanController.cs" />
      <Compile Include="Assets\SunManScripts\towerController.cs" />
      <Compile Include="Assets\UI\OnClick.cs" />
-     <None Include="Assets\GameBackgrounds\Resources\Sprites\SpriteSources.txt" />
      <None Include="Assets\Resources\Sprites\SpriteSources.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
