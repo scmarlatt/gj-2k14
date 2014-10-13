@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CrosshairController.cs" />
      <Compile Include="Assets\Scripts\TowerController.cs" />
+     <Compile Include="Assets\Spawn\AI.cs" />
+     <Compile Include="Assets\Spawn\Spawn.cs" />
      <Compile Include="Assets\SunManScripts\playerStats.cs" />
      <Compile Include="Assets\SunManScripts\sunmanController.cs" />
      <Compile Include="Assets\SunManScripts\towerController.cs" />
