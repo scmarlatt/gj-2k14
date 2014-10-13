@@ -26,6 +26,9 @@ public class Stats : MonoBehaviour {
 	public int etPow = 0;
 	public int etRange = 0;
 	public int etSpec = 0;
+	public int ltCaps = 0;
+	public int wtCaps = 0;
+	public int etCaps =0;
 
 
 
