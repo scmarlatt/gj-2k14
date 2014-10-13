@@ -7,6 +7,8 @@ public class sunmanController : MonoBehaviour {
 	public float maxSpeed = 10f;
 	private bool facingRight = true;
 	private int rfs = 0;
+	public GameObject currentbeam;
+	public GameObject lightbeam;
 
 	Animator anim;
 
@@ -30,7 +32,7 @@ public class sunmanController : MonoBehaviour {
 			Flip ();
 		}
 
-		if (Input.GetKeyDown ("z")) {
+		if (Input.GetKeyDown ("w")) {
 			rigidbody.velocity = new Vector3 (rigidbody.velocity.x, maxY, 0);
 		}
 		if (rigidbody.velocity.y > 0.05) {
@@ -45,6 +47,24 @@ public class sunmanController : MonoBehaviour {
 
 		anim.SetInteger ("Aerials", rfs);
 
+		//get the current screen position of the mouse from Input
+		Vector3 mousePos2D = Input.mousePosition;
+		
+		//The camera's z position sets the how far to push the mouse into 3D
+		mousePos2D.z = 0f;
+		
+		//convert the point from 2D screen space into 3D game world space
+		Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
+
+		Vector3 characterPosition = this.transform.position;
+		Vector3 directionFromPlayerToMouse = (mousePos3D - characterPosition).normalized;
+
+		if(Input.GetKey(KeyCode.Mouse0)){
+			currentbeam = Instantiate (lightbeam) as GameObject;
+			currentbeam.transform.position = transform.position;
+			currentbeam.rigidbody.velocity += new Vector3 (50 * directionFromPlayerToMouse.x, 50 * directionFromPlayerToMouse.y, 0);
+		}
+
 	}
 
 	void Flip(){
@@ -54,10 +74,12 @@ public class sunmanController : MonoBehaviour {
 		transform.localScale = theScale;
 	}
 
+	/*
 	void OnCollisionEnter(Collider col){
 		if (col.gameObject.layer == 9) {
 			rfs = 0;
 			rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0,0);		
 		}
 	}
+	*/
 }
