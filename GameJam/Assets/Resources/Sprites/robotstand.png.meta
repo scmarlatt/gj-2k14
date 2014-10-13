@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 00f1875a7c2733e44a471fd0e7ecc077
+guid: 70a359763e3a8b242807cc8787ab9462
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: robotstand
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
