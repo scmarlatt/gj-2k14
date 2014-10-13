@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 727dd55a4c367e546958828af8e0c536
+guid: b811e33eda2138241999dd256b864f33
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: boulder
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
