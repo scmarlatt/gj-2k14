@@ -4,7 +4,13 @@
     <Files>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <File FileName="Assets/GameBackgrounds/dayrobotScript.cs" Line="17" Column="4" />
+=======
+      <File FileName="Assets/GameBackgrounds/Scripts/dayrobotScript.cs" Line="17" Column="1" />
+      <File FileName="Assets/GameBackgrounds/Scripts/downladder.cs" Line="15" Column="26" />
+      <File FileName="Assets/GameBackgrounds/Scripts/Day_Night.cs" Line="18" Column="4" />
+>>>>>>> FETCH_HEAD
 =======
       <File FileName="Assets/GameBackgrounds/Scripts/dayrobotScript.cs" Line="17" Column="1" />
       <File FileName="Assets/GameBackgrounds/Scripts/downladder.cs" Line="15" Column="26" />
