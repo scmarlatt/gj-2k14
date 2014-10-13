@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class downladder : MonoBehaviour {
+public class GoRight : MonoBehaviour {
 	public GameObject sunman;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -10,13 +11,11 @@ public class downladder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (sunman.transform.position.x > -6 && sunman.transform.position.x < 6 && sunman.transform.position.y < 0) {
+			if (sunman.transform.position.x > 23.5 && sunman.transform.position.y > 2) {
 
-			if(Input.GetKeyDown("s"))
-			{
-				print ("IAMLORDE");
+			if(Input.GetKey("d")){
 				Application.LoadLevel("Main_Tower");
 			}
-		}
+			}
 	}
 }
