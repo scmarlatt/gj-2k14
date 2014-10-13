@@ -3,6 +3,7 @@ using System.Collections;
 
 public class dayrobotScript : MonoBehaviour {
 
+	public float health = 25;
 	public float speed = 8f;
 	public float leftAndRightEdge = 2f;
 	public GameObject pform;
@@ -23,5 +24,15 @@ public class dayrobotScript : MonoBehaviour {
 			speed = -Mathf.Abs (speed);
 		} 
 
+		if (health == 0) {
+			Destroy(this.gameObject);		
+		}
+
+	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.gameObject.layer == 10) {
+			health -= .25f;		
+		}
 	}
 }
