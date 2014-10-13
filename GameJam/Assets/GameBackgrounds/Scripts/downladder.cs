@@ -12,7 +12,7 @@ public class downladder : MonoBehaviour {
 	void Update () {
 		if (sunman.transform.position.x > -6 && sunman.transform.position.x < 6 && sunman.transform.position.y < 0) {
 
-			if(Input.GetKeyDown("down"))
+			if(Input.GetKeyDown("s"))
 			{
 				print ("IAMLORDE");
 				Application.LoadLevel("Main_Tower");

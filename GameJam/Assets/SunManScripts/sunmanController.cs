@@ -20,32 +20,39 @@ public class sunmanController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		bool night = Day_Night.isnight;
 
-		float move = Input.GetAxis ("Horizontal");
-		rigidbody.velocity = new Vector3 (move * maxSpeed, rigidbody.velocity.y, 0);
 
-		anim.SetFloat ("Speed", Mathf.Abs (move));
-		if (move > 0 && !facingRight) {
-			Flip ();
-		}
-		else if(move < 0 && facingRight){
-			Flip ();
-		}
+		if (!night) {
+				
+			print ("not night!");
+			float move = Input.GetAxis ("Horizontal");
+			rigidbody.velocity = new Vector3 (move * maxSpeed, rigidbody.velocity.y, 0);
 
-		if (Input.GetKeyDown ("w")) {
-			rigidbody.velocity = new Vector3 (rigidbody.velocity.x, maxY, 0);
-		}
-		if (rigidbody.velocity.y > 0.05) {
-			rfs = 1;		
-		}
-		else if(rigidbody.velocity.y < -0.05){
-			rfs = -1;
-		}
-		else{
-			rfs = 0;
-		}
+			anim.SetFloat ("Speed", Mathf.Abs (move));
+			if (move > 0 && !facingRight) {
+				Flip ();
+			}
+			else if(move < 0 && facingRight){
+				Flip ();
+			}
 
-		anim.SetInteger ("Aerials", rfs);
+			if (Input.GetKeyDown ("w")) {
+				rigidbody.velocity = new Vector3 (rigidbody.velocity.x, maxY, 0);
+			}
+			if (rigidbody.velocity.y > 0.05) {
+				rfs = 1;		
+			}
+			else if(rigidbody.velocity.y < -0.05){
+				rfs = -1;
+			}
+			else{
+				rfs = 0;
+			}
+
+			anim.SetInteger ("Aerials", rfs);
+
+		}
 
 		//get the current screen position of the mouse from Input
 		Vector3 mousePos2D = Input.mousePosition;

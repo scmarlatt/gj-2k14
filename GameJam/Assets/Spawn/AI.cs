@@ -7,6 +7,7 @@ public class AI : MonoBehaviour {
 	float initY;
 	public bool flying;
 	bool facingRight;
+	public float health = 25f;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,10 @@ public class AI : MonoBehaviour {
 			}
 		}
 
+		if (this.health < 0) {
+			Destroy(this.gameObject);		
+		}
+
 		transform.position = temp;
 	}
 
@@ -40,5 +45,16 @@ public class AI : MonoBehaviour {
 
 	void OnDestroy () {
 		Spawn.Remove (this.gameObject);
+	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.gameObject.layer == 12) {
+			print("hi");
+			//Stats.ps.health -= 5;
+			Destroy(this.gameObject);
+		}
+		if(col.gameObject.layer == 10 && Day_Night.isnight){
+			health -= .25f;
+		}
 	}
 }
