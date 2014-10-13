@@ -42,14 +42,7 @@ public class OnClick : MonoBehaviour {
 
 	void OnGUI () {
 
-//		if(hover) {
-//			Vector2 pos = transform.position;
-//			Debug.Log (gameObject.name);
-//
-//			GUI.Box (new Rect (pos.x, (Screen.height - pos.y)-50, 100, 50), "Here is a box");
-//
-//		}
-
+		//Water GUI
 		GUILayout.BeginArea (new Rect (120, 100, 200, 200));
 		if(GUILayout.Button(new GUIContent ("Damage", "Increase Water Damage \r\nPr: " + WDamage))) {
 			process(Type.Water, Upgrade.Damage);
@@ -62,6 +55,7 @@ public class OnClick : MonoBehaviour {
 		}
 		GUILayout.EndArea ();
 
+		//Lightning GUI
 		GUILayout.BeginArea (new Rect (430, 100, 200, 200));
 		if(GUILayout.Button(new GUIContent ("Damage", "Increase Lightning Damage \r\nPr: " + LDamage))) {
 			process(Type.Lightning, Upgrade.Damage);
@@ -74,6 +68,7 @@ public class OnClick : MonoBehaviour {
 		}
 		GUILayout.EndArea ();
 
+		//Earth GUI
 		GUILayout.BeginArea (new Rect (750, 100, 200, 200));
 		if(GUILayout.Button(new GUIContent ("Damage", "Increase Earth Damage \r\nPr: " + EDamage))) {
 			process(Type.Earth, Upgrade.Damage);
@@ -86,6 +81,7 @@ public class OnClick : MonoBehaviour {
 		}
 		GUILayout.EndArea ();
 
+		//Done GUI
 		GUILayout.BeginArea (new Rect (800, 400, 200, 200));
 		if(GUILayout.Button(new GUIContent ("Done", "Go Onwards"))) {
 
@@ -96,58 +92,74 @@ public class OnClick : MonoBehaviour {
 
 	}
 
+	//Resource Transaction Logic
 	void process (Type val, Upgrade part) {
 		if(val == Type.Water) {
 			TextMesh display = WMoney.GetComponent<TextMesh> ();
 			int level = int.Parse (display.text);
-			if(part == Upgrade.Damage) {
+			if(part == Upgrade.Damage && (level >= WDamage)) {
 				level -= WDamage;
 				WDamage = WDamage * 2;
-				Debug.Log (WDamage);
-			}
-			if(part == Upgrade.Range) {
+			} else if(part == Upgrade.Range && (level >= WRange)) {
 				level -= WRange;
 				WRange = WRange * 2;
-			}
-			if(part == Upgrade.Special) {
+			} else if(part == Upgrade.Special && (level >= WSpecial)) {
 				level -= WSpecial;
 				WSpecial = WSpecial * 2;
+			} else {
+				StartCoroutine(ShowError());
 			}
 			display.text = level.ToString ();
 		}
 		if(val == Type.Lightning) {
 			TextMesh display = LMoney.GetComponent<TextMesh> ();
 			int level = int.Parse (display.text);
-			if(part == Upgrade.Damage) {
+			if(part == Upgrade.Damage && (level >= LDamage)) {
 				level -= LDamage;
 				LDamage = LDamage * 2;
-			}
-			if(part == Upgrade.Range) {
+			} else if(part == Upgrade.Range && (level >= LRange)) {
 				level -= LRange;
 				LRange = LRange * 2;
-			}
-			if(part == Upgrade.Special) {
+			} else if(part == Upgrade.Special && (level >= LSpecial)) {
 				level -= LSpecial;
 				LSpecial = LSpecial * 2;
+			} else {
+				StartCoroutine(ShowError());
 			}
 			display.text = level.ToString ();
 		}
 		if(val == Type.Earth) {
 			TextMesh display = EMoney.GetComponent<TextMesh> ();
 			int level = int.Parse (display.text);
-			if(part == Upgrade.Damage) {
+			if(part == Upgrade.Damage && (level >= EDamage)) {
 				level -= EDamage;
 				EDamage = EDamage * 2;
-			}
-			if(part == Upgrade.Range) {
+			} else if(part == Upgrade.Range && (level >= ERange)) {
 				level -= ERange;
 				ERange = ERange * 2;
-			}
-			if(part == Upgrade.Special) {
+			} else if(part == Upgrade.Special && (level >= ESpecial)) {
 				level -= ESpecial;
 				ESpecial = ESpecial * 2;
+			} else {
+				StartCoroutine(ShowError());
 			}
 			display.text = level.ToString ();
 		}
+	}
+
+	//Error Pop Up
+	IEnumerator ShowError () {
+		string message = "Not enough resource.";
+		float delay = 2f;
+		GameObject display = new GameObject ("GUIText");
+		display.AddComponent (typeof(GUIText));
+		display.guiText.text = message;
+		display.guiText.fontSize = 18;
+		display.guiText.alignment = TextAlignment.Center;
+		display.guiText.anchor = TextAnchor.UpperCenter;
+		Vector3 temp = new Vector3(0.5f, 0.5f, 0.1f);
+		display.transform.position = temp;
+		yield return new WaitForSeconds(delay);
+		Destroy (display);
 	}
 }
