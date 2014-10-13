@@ -58,7 +58,6 @@
      <Compile Include="Assets\SunManScripts\sunmanController.cs" />
      <Compile Include="Assets\SunManScripts\towerController.cs" />
      <Compile Include="Assets\UI\OnClick.cs" />
-     <None Include="Assets\GameBackgrounds\Resources\Sprites\SpriteSources.txt" />
      <None Include="Assets\Resources\Sprites\SpriteSources.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

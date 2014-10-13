@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AI : MonoBehaviour {
-	float jumpSpeed = 22f;
+	float jumpSpeed = 48f;
 	float horiSpeed = 3f;
 	float initY;
 	public bool flying;

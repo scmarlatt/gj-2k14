@@ -1,36 +1,8 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Spawn\Night\Spawn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Spawn\AI.cs">
     <Files>
-      <File FileName="Assets\UI\OnClick.cs" Line="1" Column="1" />
-      <File FileName="Assets\Spawn\Night\Spawn.cs" Line="28" Column="16" />
-      <File FileName="Assets\Spawn\Night\AI.cs" Line="1" Column="1" />
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameBackgrounds/BadGuyScript.cs">
-    <Files>
-      <File FileName="Assets/GameBackgrounds/Day_Night.cs" Line="34" Column="1" />
-      <File FileName="../../GameJam/Assets/GameBackgrounds/Day_Night.cs" Line="34" Column="1" />
-      <File FileName="Assets/GameBackgrounds/BadGuyScript.cs" Line="5" Column="2" />
-      <File FileName="../../EECS494-F14-A1-SPECTORMATT_MARLATTSCOTT/Assets/Scripts/Snail.cs" Line="10" Column="28" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SunManScripts/lightbeamScript.cs">
-    <Files>
-      <File FileName="Assets/SunManScripts/sunmanController.cs" Line="65" Column="88" />
-      <File FileName="../../494/megaman2bubbleman_v2.1/Assets/Scripts/MegaManController.cs" Line="1" Column="1" />
-      <File FileName="Assets/SunManScripts/lightbeamScript.cs" Line="14" Column="18" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameBackgrounds/Day_Night.cs">
-    <Files>
-      <File FileName="Assets/GameBackgrounds/Day_Night.cs" Line="34" Column="1" />
-      <File FileName="../../GameJam/Assets/GameBackgrounds/Day_Night.cs" Line="34" Column="1" />
->>>>>>> FETCH_HEAD
->>>>>>> db93a10db6b54665701b66ed1a37f16342c66e3c
->>>>>>> origin/master
+      <File FileName="Assets\Spawn\AI.cs" Line="45" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

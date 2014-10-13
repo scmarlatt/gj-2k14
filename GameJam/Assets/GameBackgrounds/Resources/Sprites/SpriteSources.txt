@@ -1,4 +1,0 @@
-LightningFlyer: http://opengameart.org/content/cloud-npc
-Boulder: http://opengameart.org/content/boulder
-Wings: http://opengameart.org/content/wings
-
