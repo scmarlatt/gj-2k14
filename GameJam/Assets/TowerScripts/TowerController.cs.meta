@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4fc8062f3fbd95949b8623523514e3c7
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - lightningPrefab: {fileID: 100000, guid: 1fb60b677518b5b4798511c23d5ef3b4, type: 2}
+  - earthProjectilePrefab: {fileID: 100000, guid: 88d70229fea0c1344a8f17c701bea1f2,
+      type: 2}
+  - waterProjectilePrefab: {fileID: 100000, guid: 1e16112ee2bd054458049a75e6444797,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

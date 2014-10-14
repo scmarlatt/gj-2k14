@@ -3,10 +3,11 @@ using System.Collections;
 
 public class Day_Night : MonoBehaviour {
 	static public bool isday = false;
-	static public bool isnight = false;
+	static public bool isnight = true;
+	public float timer = 0.0f;
 	// Use this for initialization
 	void Start () {
-		
+		timer = 0.0f;
 	}
 	
 	// Update is called once per frame
@@ -14,18 +15,23 @@ public class Day_Night : MonoBehaviour {
 		
 		
 		
-		if (transform.localEulerAngles.y > 330 && transform.localEulerAngles.y < 360) {
+		if (isnight && timer > 60.0f) {
+			Application.LoadLevel("Main_Tower_Day");
 			isday = true;
 			isnight = false;
-			transform.Rotate (3 * Time.deltaTime, 0, 0);
-			//print ("itsDay");
-		} else {
-			isday = false;
+			print (isnight);
+			print (isday);
+		}
+		else if(!isnight && timer > 30.0f){
+			Application.LoadLevel("Main_Tower_Night");
 			isnight = true;
-			transform.Rotate (6 * Time.deltaTime, 0, 0);
-			//print ("itsNight");
+			isday = false;
+			print (isnight);
+			print (isday);
 		}
 		
+
+			timer += Time.deltaTime;
 	}
 }
 
