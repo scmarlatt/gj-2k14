@@ -19,7 +19,7 @@ public class Day_Night : MonoBehaviour {
 		}
 
 		
-		if (isnight && timer > 15.0f) {
+		if (isnight && timer > 30.0f) {
 			Application.LoadLevel("Main_Tower_Day");
 			isday = true;
 			isnight = false;

@@ -69,6 +69,9 @@ public class TowerController : MonoBehaviour {
 				projectileObject.rigidbody.velocity += new Vector3 (0, 20, 0);
 
 			}
+			if(Stats.ps.health <= 0.0f){
+				Application.LoadLevel("Game_Over");
+			}
 		}
 		//}
 
