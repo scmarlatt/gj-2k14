@@ -20,59 +20,57 @@ public class sunmanController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		bool night = Day_Night.isnight;
+				bool night = Day_Night.isnight;
 
 
-		if (!night) {
+				if (!night) {
 				
-			print ("not night!");
-			float move = Input.GetAxis ("Horizontal");
-			rigidbody.velocity = new Vector3 (move * maxSpeed, rigidbody.velocity.y, 0);
+						print ("not night!");
+						float move = Input.GetAxis ("Horizontal");
+						rigidbody.velocity = new Vector3 (move * maxSpeed, rigidbody.velocity.y, 0);
 
-			anim.SetFloat ("Speed", Mathf.Abs (move));
-			if (move > 0 && !facingRight) {
-				Flip ();
-			}
-			else if(move < 0 && facingRight){
-				Flip ();
-			}
+						anim.SetFloat ("Speed", Mathf.Abs (move));
+						if (move > 0 && !facingRight) {
+								Flip ();
+						} else if (move < 0 && facingRight) {
+								Flip ();
+						}
 
-			if (Input.GetKeyDown ("w")) {
-				rigidbody.velocity = new Vector3 (rigidbody.velocity.x, maxY, 0);
-			}
-			if (rigidbody.velocity.y > 0.05) {
-				rfs = 1;		
-			}
-			else if(rigidbody.velocity.y < -0.05){
-				rfs = -1;
-			}
-			else{
-				rfs = 0;
-			}
+						if (Input.GetKeyDown ("w")) {
+								rigidbody.velocity = new Vector3 (rigidbody.velocity.x, maxY, 0);
+						}
+						if (rigidbody.velocity.y > 0.05) {
+								rfs = 1;		
+						} else if (rigidbody.velocity.y < -0.05) {
+								rfs = -1;
+						} else {
+								rfs = 0;
+						}
 
-			anim.SetInteger ("Aerials", rfs);
+						anim.SetInteger ("Aerials", rfs);
 
-		}
 
-		//get the current screen position of the mouse from Input
-		Vector3 mousePos2D = Input.mousePosition;
+
+						//get the current screen position of the mouse from Input
+						Vector3 mousePos2D = Input.mousePosition;
 		
-		//The camera's z position sets the how far to push the mouse into 3D
-		mousePos2D.z = 0f;
+						//The camera's z position sets the how far to push the mouse into 3D
+						mousePos2D.z = 0f;
 		
-		//convert the point from 2D screen space into 3D game world space
-		Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
+						//convert the point from 2D screen space into 3D game world space
+						Vector3 mousePos3D = Camera.main.ScreenToWorldPoint (mousePos2D);
 
-		Vector3 characterPosition = this.transform.position;
-		Vector3 directionFromPlayerToMouse = (mousePos3D - characterPosition).normalized;
+						Vector3 characterPosition = this.transform.position;
+						Vector3 directionFromPlayerToMouse = (mousePos3D - characterPosition).normalized;
 
-		if(Input.GetKey(KeyCode.Mouse0)){
-			currentbeam = Instantiate (lightbeam) as GameObject;
-			currentbeam.transform.position = transform.position;
-			currentbeam.rigidbody.velocity += new Vector3 (50 * directionFromPlayerToMouse.x, 50 * directionFromPlayerToMouse.y, 0);
+						if (Input.GetKey (KeyCode.Mouse0)) {
+								currentbeam = Instantiate (lightbeam) as GameObject;
+								currentbeam.transform.position = transform.position;
+								currentbeam.rigidbody.velocity += new Vector3 (50 * directionFromPlayerToMouse.x, 50 * directionFromPlayerToMouse.y, 0);
+						}
+
+				}
 		}
-
-	}
 
 	void Flip(){
 		facingRight = !facingRight;

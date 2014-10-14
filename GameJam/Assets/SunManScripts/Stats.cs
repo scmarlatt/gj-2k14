@@ -10,7 +10,7 @@ public class Stats : MonoBehaviour {
 	public int numDayRunsRemaining = 3;
 
 	//PLAYER
-	public float health = 100;
+	public float health = 50;
 	public float mana = 60f;
 	public float manaRegen = 5.0f;
 	public float armor = 0.0f;
@@ -34,7 +34,7 @@ public class Stats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		ps = this;
 	}
 	
 	// Update is called once per frame

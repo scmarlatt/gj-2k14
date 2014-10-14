@@ -2,9 +2,13 @@
 using System.Collections;
 
 public class AI : MonoBehaviour {
+	
+	public enum Type { Water, Lightning, Earth };
+	
 	float jumpSpeed = 48f;
-	float horiSpeed = 3f;
+	public float horiSpeed = 3f;
 	float initY;
+	public Type type;
 	public bool flying;
 	bool facingRight;
 	public float health = 25f;
@@ -50,8 +54,11 @@ public class AI : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.layer == 12) {
 			print("hi");
-			//Stats.ps.health -= 5;
-			Destroy(this.gameObject);
+			TakeDamage(convert(col.gameObject.name));
+			Stats.ps.health -= 5;
+			if(health <= 0) {
+				Destroy(this.gameObject);
+			}
 		}
 		
 		//Got hit with a projectile
@@ -67,12 +74,42 @@ public class AI : MonoBehaviour {
 	}
 	
 	public void TakeDamage(attackType at){
+		float mod = 1f;
 		if(at == attackType.EARTH){
-			health -= 5.0f;
+			if(type == Type.Lightning) {
+				mod = mod * 1.2f;
+			} else if (type == Type.Water) {
+				mod = mod * 0.8f;
+			}
+			health -= mod * 5.0f;
 		} else if (at == attackType.LIGHTNING){
-			health -= 8.0f;
+			if(type == Type.Earth) {
+				mod = mod * 0.8f;
+			} else if (type == Type.Water) {
+				mod = mod * 1.2f;
+			}
+			health -= mod * 8.0f;
 		} else if (at == attackType.WATER){
-			health -= .25f;
+			if(type == Type.Lightning) {
+				mod = mod * 0.8f;
+			} else if (type == Type.Earth) {
+				mod = mod * 1.2f;
+			}
+			health -= mod * .25f;
+		} else {
+			health -= mod * 3.0f;
+		}
+	}
+	
+	attackType convert(string name) {
+		if (name == "WaterProjectilePrefab") {
+			return attackType.WATER;
+		} else if (name == "LightningProjectilePrefab") {
+			return attackType.LIGHTNING;
+		} else if (name == "EarthProjectilePrefab") {
+			return attackType.EARTH;
+		} else {
+			return attackType.LIGHT;
 		}
 	}
 }

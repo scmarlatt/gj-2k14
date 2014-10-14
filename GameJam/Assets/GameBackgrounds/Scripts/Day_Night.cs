@@ -5,6 +5,7 @@ public class Day_Night : MonoBehaviour {
 	static public bool isday = false;
 	static public bool isnight = true;
 	public float timer = 0.0f;
+	static public int nightNum = 0;
 	// Use this for initialization
 	void Start () {
 		timer = 0.0f;
@@ -13,23 +14,27 @@ public class Day_Night : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		if (Application.loadedLevelName == "Earth_World" || Application.loadedLevelName == "Water_World" || Application.loadedLevelName == "Lightning_World") {
+			timer = 0.0f;		
+		}
+
 		
-		
-		if (isnight && timer > 60.0f) {
+		if (isnight && timer > 15.0f) {
 			Application.LoadLevel("Main_Tower_Day");
 			isday = true;
 			isnight = false;
 			print (isnight);
 			print (isday);
 		}
-		else if(!isnight && timer > 30.0f){
+		else if(!isnight && timer > 10.0f){
 			Application.LoadLevel("Main_Tower_Night");
+			++nightNum;
+			print(nightNum);
 			isnight = true;
 			isday = false;
 			print (isnight);
 			print (isday);
 		}
-		
 
 			timer += Time.deltaTime;
 	}

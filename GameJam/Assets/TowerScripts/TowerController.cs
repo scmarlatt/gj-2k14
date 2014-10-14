@@ -10,12 +10,15 @@ public class TowerController : MonoBehaviour {
 	public GameObject lightningPrefab;
 	public GameObject earthProjectilePrefab;
 	public GameObject waterProjectilePrefab;
+	static public bool usingWater = true;
+	static public bool usingLightning = false;
+	static public bool usingEarth = false;
 
 	private List<GameObject> projectileList;
 
 	// Use this for initialization
 	void Start () {
-		currentAttack = attackType.LIGHT;
+		currentAttack = attackType.WATER;
 		attackOriginPoint = new Vector3 (-20.48f, 5.47325f, 0.0f);
 	}
 	
@@ -28,10 +31,19 @@ public class TowerController : MonoBehaviour {
 				currentAttack = attackType.LIGHT;
 			} else if(Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)){
 				currentAttack = attackType.WATER;
+				usingWater = true;
+				usingLightning = false;
+				usingEarth = false;
 			} else if(Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2)){
 				currentAttack = attackType.LIGHTNING;
+				usingWater = false;
+				usingLightning = true;
+				usingEarth = false;
 			} else if(Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3)){
 				currentAttack = attackType.EARTH;
+				usingWater = false;
+				usingLightning = false;
+				usingEarth = true;
 			}
 
 			//Handle firing

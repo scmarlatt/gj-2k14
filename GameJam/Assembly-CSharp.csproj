@@ -52,7 +52,9 @@
      <Compile Include="Assets\GameBackgrounds\Scripts\dayrobotScript.cs" />
      <Compile Include="Assets\GameBackgrounds\Scripts\downladder.cs" />
      <Compile Include="Assets\Spawn\AI.cs" />
+     <Compile Include="Assets\Spawn\ElementScripts.cs" />
      <Compile Include="Assets\Spawn\Spawn.cs" />
+     <Compile Include="Assets\Spawn\TowerHealth.cs" />
      <Compile Include="Assets\SunManScripts\Stats.cs" />
      <Compile Include="Assets\SunManScripts\lightbeamScript.cs" />
      <Compile Include="Assets\SunManScripts\sunmanController.cs" />

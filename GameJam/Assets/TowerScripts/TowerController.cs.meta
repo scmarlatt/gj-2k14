@@ -8,6 +8,7 @@ MonoImporter:
       type: 2}
   - waterProjectilePrefab: {fileID: 100000, guid: 1e16112ee2bd054458049a75e6444797,
       type: 2}
+  - lightPrefab: {fileID: 100000, guid: c2c4f85b2cb754ef8984b2d86ef94641, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
