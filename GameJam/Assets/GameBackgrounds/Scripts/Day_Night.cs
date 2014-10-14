@@ -5,7 +5,7 @@ public class Day_Night : MonoBehaviour {
 	static public bool isday = false;
 	static public bool isnight = true;
 	public float timer = 0.0f;
-	static public int nightNum = 0;
+	static public float nightNum = 1;
 	// Use this for initialization
 	void Start () {
 		timer = 0.0f;
@@ -28,7 +28,7 @@ public class Day_Night : MonoBehaviour {
 		}
 		else if(!isnight && timer > 10.0f){
 			Application.LoadLevel("Main_Tower_Night");
-			++nightNum;
+			nightNum += 1.0f;
 			print(nightNum);
 			isnight = true;
 			isday = false;

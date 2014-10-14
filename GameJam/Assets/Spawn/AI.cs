@@ -17,6 +17,7 @@ public class AI : MonoBehaviour {
 	void Start () {
 		initY = transform.position.y;
 		Flip ();
+		health += health * .1f * Day_Night.nightNum;
 	}
 	
 	// Update is called once per frame
@@ -52,13 +53,16 @@ public class AI : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.layer == 12) {
+		if (col.gameObject.layer == 10) {
 			print("hi");
 			TakeDamage(convert(col.gameObject.name));
-			Stats.ps.health -= 5;
 			if(health <= 0) {
 				Destroy(this.gameObject);
 			}
+		}
+		else if(col.gameObject.layer == 12){
+			Stats.ps.health -= this.health * .25f;
+			Destroy(this.gameObject);
 		}
 		
 		//Got hit with a projectile

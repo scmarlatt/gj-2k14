@@ -18,7 +18,7 @@ public class NewArea : MonoBehaviour {
 			} else if (loc == Location.Base) {
 				Application.LoadLevel ("Main_Tower_Night");
 				Day_Night.isnight = true;
-				Day_Night.nightNum += 1;
+				Day_Night.nightNum += 1.0f;
 			}
 		}
 	}
