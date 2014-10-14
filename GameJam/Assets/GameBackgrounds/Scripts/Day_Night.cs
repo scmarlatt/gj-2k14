@@ -14,19 +14,19 @@ public class Day_Night : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Application.loadedLevelName == "Earth_World" || Application.loadedLevelName == "Water_World" || Application.loadedLevelName == "Lightning_World") {
+		if (Application.loadedLevelName == "Earth_World" || Application.loadedLevelName == "Water_World" || Application.loadedLevelName == "Thunder_World") {
 			timer = 0.0f;		
 		}
 
 		
-		if (isnight && timer > 30.0f) {
+		if (isnight && timer > 10.0f) {
 			Application.LoadLevel("Main_Tower_Day");
 			isday = true;
 			isnight = false;
 			print (isnight);
 			print (isday);
 		}
-		else if(!isnight && timer > 10.0f){
+		else if(!isnight && timer > 30.0f){
 			Application.LoadLevel("Main_Tower_Night");
 			nightNum += 1.0f;
 			print(nightNum);
